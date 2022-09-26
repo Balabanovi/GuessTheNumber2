@@ -37,7 +37,8 @@ namespace GuessTheNumber2
         static void playAgain()
         {
             Console.Write("Play again? Y/N: ");
-            char newGame = Convert.ToChar(Console.ReadLine());
+            var userEntry = Console.ReadLine();
+            char newGame = (!String.IsNullOrEmpty(userEntry)) ? Convert.ToChar(userEntry) : ' ';
             if (newGame == 'Y' || newGame == 'y')
             {
                 Console.WriteLine();
