@@ -10,8 +10,8 @@ namespace GuessTheNumber2
     {
         static Random randomNum = new Random();
         static int winningNum = randomNum.Next(0, 10);
-        public int steps = 0;
-        public int guess;
+        static int steps = 0;
+        static int guess;
         static int roundNum = 0;
 
         public Round()
